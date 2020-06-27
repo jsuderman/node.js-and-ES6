@@ -4,9 +4,8 @@ const util = require("util");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 // questions for users to answer to fill in a dynamically generated readme file
-// function promptUser() {
-//     return 
-    inquirer.prompt([
+const questions = [
+
         {
             type: "input",
             name: "username",
@@ -40,7 +39,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
             ]
         },
         {   type: "input",
-            name: "dependencies",
+            name: "installations",
             message: "What command should be run to install dependencies?"
         },
         {
@@ -57,5 +56,18 @@ const writeFileAsync = util.promisify(fs.writeFile);
             name: "contribution",
             message: "what does the user need to know about contributing to the repo?"
         }
-    ]);
-//}
+]
+
+function writeToFile("README.md", data)
+    
+
+
+
+
+
+
+inquirer
+        .prompt(questions).then(response => {
+
+        
+        })
