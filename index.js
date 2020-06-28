@@ -9,8 +9,8 @@ const writeFileAsync = util.promisify(fs.writeFile);
         return inquirer.prompt([
             {
                 type: "input",
-                name: "username",
-                message: "what is your name?"
+                name: "email",
+                message: "what is your email?"
             },
             {
                 type: "input",
@@ -66,26 +66,27 @@ const writeFileAsync = util.promisify(fs.writeFile);
 function generateMarkdown(data) {
     return `# ${data.project}
     ## Description 
-    ${data.description} '\n'
+    ${data.description} \n
     ## Table of Contents
-    ** Installation
-    ** Usage
-    ** License
-    ** Contributing
-    ** Tests
-    ** Questions '\n'
+    ** [Installation](#Installations)
+    ** [Usage](#Usage)
+    ** [License](#License)
+    ** [Contributing](#Contributing)
+    ** [Tests](#Test) 
+    ** [Questions](#Questions) \n
     ## Installations 
-    ${data.installations} '\n' 
+    ${data.installations} \n 
     ## Usage 
-    ${data.usage} '\n'
+    ${data.usage} \n
     ## License
-    ${data.license} '\n'
+    ${data.license} \n
     ## Contributing
-    ${data.contribution} '\n'
+    ${data.contribution} \n
     ## Test
-    ${data.test} '\n'
+    ${data.test} \n
     ## Questions
     Any questions? please find me at [here](https://github.com/${data.github})
+    [Email me at ](${data.email})
   `;
 }
 

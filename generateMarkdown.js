@@ -24,7 +24,6 @@ function generateMarkdown(data) {
     Any questions? please find me at [here](https://github.com/${data.github.response})
   
   `;
-  }
-  
-  module.exports = generateMarkdown;
-  
+}
+
+module.exports = generateMarkdown;
