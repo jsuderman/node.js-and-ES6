@@ -66,27 +66,26 @@ const writeFileAsync = util.promisify(fs.writeFile);
 function generateMarkdown(data) {
     return `# ${data.project}
     ## Description 
-    ${data.description}
-    ## table of contents
+    ${data.description} '\n'
+    ## Table of Contents
     ** Installation
     ** Usage
     ** License
     ** Contributing
     ** Tests
-    ** Questions
-    ## ${data.installations}
-    ${data.installations}
-    ## ${data.usage}
-    ${data.usage}
+    ** Questions '\n'
+    ## Installations 
+    ${data.installations} '\n' 
+    ## Usage 
+    ${data.usage} '\n'
     ## License
-    ${data.license}
+    ${data.license} '\n'
     ## Contributing
-    ${data.contirbution}
+    ${data.contribution} '\n'
     ## Test
-    ${data.tests}
+    ${data.test} '\n'
     ## Questions
     Any questions? please find me at [here](https://github.com/${data.github})
-  
   `;
 }
 
