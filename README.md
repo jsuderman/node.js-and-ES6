@@ -1,6 +1,6 @@
-# fdg
+# read me file generator
     ## Description 
-    fdgf 
+    this project is dynamically generating a readme.md file with user input 
 
     ## Table of Contents
     ** [Installation](#Installations)
@@ -11,21 +11,21 @@
     ** [Questions](#Questions) 
 
     ## Installations 
-    h 
+    fs, inquirer 
  
     ## Usage 
-    ghgh 
+    nothing 
 
     ## License
-    MIT 
+    none 
 
     ## Contributing
-    fgdhg 
+    just ask! 
 
     ## Test
-    gfhdfh 
+    npm test 
 
     ## Questions
-    Any questions? please find me at [here](https://github.com/dsfd)
-    [Email me at ](df@gmail.com)
+    Any questions? please find me at [here](https://github.com/jsuderman)
+    [Email me at ](jsuderman1@gmail.com)
   
